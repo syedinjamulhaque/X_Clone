@@ -11,9 +11,9 @@
 </head>
 
 <body class="text-white bg-black">
-  <div class="flex w-full">
+  <div class="flex w-full relative">
     <!-- First -->
-    <div class="w-2/3 pt-1.5 mt-3">
+    <div class="w-2/3 pt-3.5 h-screen top-0 sticky">
       <!-- Icon -->
       <div class="flex flex-col items-center mr-34 mb-5">
         <img src="/public/x.svg" alt="X-Icon" class="w-8">
@@ -66,10 +66,170 @@
         </div>
       </div>
     </div>
+
     <!-- Second  -->
-    <div class="w-full border-x border-slate-600">aaa</div>
+    <div class="w-full border-x border-slate-600"></div>
+
     <!-- Third  -->
-    <div class="w-full">aaa</div>
+    <div class="w-full relative">
+      <!-- Search  -->
+      <div class="bg-black top-0 sticky z-50 pt-4">
+        <section class="flex gap-2 border relative border-slate-600 rounded-full w-3/5 ml-8 h-10 pl-4">
+          <span class="material-symbols-outlined text-xl! absolute text-gray-400 top-1.5">search</span>
+          <input type="text" placeholder="Search" class="h-8 pl-8">
+        </section>
+      </div>
+
+      <!-- Below Search  -->
+      <section class="flex flex-col gap-3 w-3/5 m-8 border border-slate-600 rounded-2xl px-6 py-4">
+        <div class="font-bold text-xl">Subscribe to Premium</div>
+        <p class="text-sm">Get rid of ads, see your analytics, boost your replies and unlock 20+ features.</p>
+        <button class="rounded-full bg-blue-500 hover:bg-blue-600 w-1/2 h-9 font-bold cursor-pointer">Subscribe</button>
+      </section>
+
+      <!-- Below Subscribe  -->
+      <section class="flex flex-col gap-3 w-3/5 m-8 border border-slate-600 rounded-2xl px-4 py-4">
+        <div class="flex justify-between items-center">
+          <div class="font-extrabold text-xl">Today's News</div>
+          <span class="material-symbols-outlined hover:cursor-pointer">close</span>
+        </div>
+        <div class="space-y-10 py-6 hover:cursor-pointer">
+          <!-- 1st Aside -->
+          <aside class="flex flex-col gap-2">
+            <div class="font-medium">Glacier Collapse Triggers Deadly Flash Flood in Nepal Killing Nearly 900</div>
+            <div class="flex relative">
+              <span class="material-symbols-outlined absolute z-30 bg-black">account_circle</span>
+              <span class="material-symbols-outlined absolute left-3 z-20 bg-black">account_circle</span>
+              <span class="material-symbols-outlined absolute left-6 z-10 bg-black">account_circle</span>
+              <p class="text-sm text-slate-500 absolute left-16">2 days ago · News · 126.9K posts</p>
+            </div>
+          </aside>
+          <!-- 2nd Aside -->
+          <aside class="flex flex-col gap-2">
+            <div class="font-bold">Atlético Madrid Land Jonathan David on Loan from Juventus</div>
+            <div class="flex relative">
+              <span class="material-symbols-outlined absolute z-30 bg-black">account_circle</span>
+              <span class="material-symbols-outlined absolute left-3 z-20 bg-black">account_circle</span>
+              <span class="material-symbols-outlined absolute left-6 z-10 bg-black">account_circle</span>
+              <p class="text-sm text-slate-500 absolute left-16">6 hours ago · Sports · 20.4K posts</p>
+            </div>
+          </aside>
+          <!-- 3rd Aside -->
+          <aside class="flex flex-col gap-2">
+            <div class="font-bold">Xi and Putin Meet at SCO's 25th Anniversary Summit in Bishkek</div>
+            <div class="flex relative">
+              <span class="material-symbols-outlined absolute z-30 bg-black">account_circle</span>
+              <span class="material-symbols-outlined absolute left-3 z-20 bg-black">account_circle</span>
+              <span class="material-symbols-outlined absolute left-6 z-10 bg-black">account_circle</span>
+              <p class="text-sm text-slate-500 absolute left-16">4 hours ago · News · 4,334 posts</p>
+            </div>
+          </aside>
+        </div>
+      </section>
+      <!-- What's Happening -->
+      <section class="flex flex-col gap-3 w-3/5 m-8 border border-slate-600 rounded-2xl px-6 py-4">
+        <div class="font-extrabold text-xl">What's Happening</div>
+        <div class="space-y-6 hover:cursor-pointer">
+          <div class="flex justify-between items-center">
+            <!-- 1st Aside -->
+            <aside>
+              <p class="text-sm text-slate-500">Sports · Trending</p>
+              <div class="font-semibold">The Greatest</div>
+            </aside>
+            <span
+              class="material-symbols-outlined hover:border hover:rounded-full hover:bg-blue-200 hover:text-blue-800">more_horiz</span>
+          </div>
+          <div class="flex justify-between items-center">
+            <!-- 2nd Aside -->
+            <aside>
+              <p class="text-sm text-slate-500">Politics · Trending</p>
+              <div class="font-semibold">Son River</div>
+            </aside>
+            <span
+              class="material-symbols-outlined hover:border hover:rounded-full hover:bg-blue-200 hover:text-blue-800">more_horiz</span>
+          </div>
+          <div class="flex justify-between items-center">
+            <!-- 3rd Aside -->
+            <aside>
+              <p class="text-sm text-slate-500">Business &amp; Finance · Trending</p>
+              <div class="font-semibold">#UPRise2026</div>
+            </aside>
+            <span
+              class="material-symbols-outlined hover:border hover:rounded-full hover:bg-blue-200 hover:text-blue-800">more_horiz</span>
+          </div>
+          <div class="flex justify-between items-center">
+            <!-- 4th Aside -->
+            <aside>
+              <p class="text-sm text-slate-500">Trending in India</p>
+              <div class="font-semibold">#Ronaldo</div>
+            </aside>
+            <span
+              class="material-symbols-outlined hover:border hover:rounded-full hover:bg-blue-200 hover:text-blue-800">more_horiz</span>
+          </div>
+          <div class="text-blue-400">Show more</div>
+        </div>
+      </section>
+      <!-- Who to Follow  -->
+      <section class="flex flex-col gap-3 w-3/5 mx-8 mt-8 mb-4 border border-slate-600 rounded-2xl px-6 py-4">
+        <div class="font-extrabold text-xl">Who to Follow</div>
+        <div class="space-y-6 mt-4 hover:cursor-pointer">
+          <!-- 1st Aside -->
+          <aside class="flex justify-between">
+            <div class="flex items-center gap-2">
+              <span class="material-symbols-outlined text-4xl!">account_circle</span>
+              <div class="flex flex-col">
+                <div class="flex gap-1 justify-center">
+                  <div class="font-semibold text-base hover:underline">Ravindrasinh Jadeja</div>
+                  <span class="material-symbols-outlined text-blue-600">verified</span>
+                </div>
+                <p class="text-gray-500 text-sm">@imjadeja</p>
+              </div>
+            </div>
+            <button
+              class="border bg-white text-black rounded-full h-8 w-1/4 font-bold hover:bg-gray-300 hover:cursor-pointer">Follow</button>
+          </aside>
+          <!-- 2nd Aside -->
+          <aside class="flex justify-between">
+            <div class="flex items-center gap-2">
+              <span class="material-symbols-outlined text-4xl!">account_circle</span>
+              <div class="flex flex-col">
+                <div class="flex gap-1 justify-center">
+                  <div class="font-semibold text-base hover:underline">Sachin Tendulkar</div>
+                  <span class="material-symbols-outlined text-blue-600">verified</span>
+                </div>
+                <p class="text-gray-500 text-sm">@sachin_rt</p>
+              </div>
+            </div>
+            <button
+              class="border bg-white text-black rounded-full h-8 w-1/4 font-bold hover:bg-gray-300 hover:cursor-pointer">Follow</button>
+          </aside>
+          <!-- 3rd Aside -->
+          <aside class="flex justify-between">
+            <div class="flex items-center gap-2">
+              <span class="material-symbols-outlined text-4xl!">account_circle</span>
+              <div class="flex flex-col">
+                <div class="flex gap-1 justify-center">
+                  <div class="font-semibold text-base hover:underline">Cristiano Ronaldo</div>
+                  <span class="material-symbols-outlined text-blue-600">verified</span>
+                </div>
+                <p class="text-gray-500 text-sm">@Cristiano</p>
+              </div>
+            </div>
+            <button
+              class="border bg-white text-black rounded-full h-8 w-1/4 font-bold hover:bg-gray-300 hover:cursor-pointer">Follow</button>
+          </aside>
+          <div class="text-blue-400">Show more</div>
+        </div>
+      </section>
+      <!-- Below Who to Follow  -->
+      <section class="w-3/5 my-4 mx-8 pl-4">
+        <div class="text-xs text-gray-500"><span>Terms</span> · <span>Privacy</span> · <span>Cookies</span> ·
+          <span>Accessibility</span> ·</div>
+        <div class="text-xs text-gray-500"><span>Ads Info</span> · <span class="inline-flex  items-center"><span>More
+            </span><span class="material-symbols-outlined text-xs font-extralight">more_horiz</span></span> ·
+          <span>&copy; 2026 X Corp.</span></div>
+      </section>
+    </div>
   </div>
 </body>
 
