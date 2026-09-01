@@ -16,7 +16,7 @@
     <div class="w-2/3 pt-3.5 h-screen top-0 sticky">
       <!-- Icon -->
       <div class="flex flex-col items-center mr-34 mb-5">
-        <img src="/public/x.svg" alt="X-Icon" class="w-8">
+        <img src="/x.svg" alt="X-Icon" class="w-8">
       </div>
       <!-- Below Icon -->
       <div class="flex flex-col items-center">
@@ -68,10 +68,319 @@
     </div>
 
     <!-- Second  -->
-    <div class="w-full border-x border-slate-600"></div>
+    <div class="w-full border-x border-slate-600 relative ">
+      <!-- For you  -->
+      <div class="sticky top-0 backdrop-blur-sm">
+        <div class="grid grid-cols-[8fr_8fr_1fr] text-center border-b border-slate-600 h-12 pt-2 hover:cursor-pointer">
+          <div class="flex flex-col gap-2 items-center overflow-y-hidden">
+            <div class="font-bold text-xl">For you</div>
+            <span class="border-3 overflow-y-hidden rounded-full border-blue-700 w-1/4"></span>
+          </div>
+          <div class="font-bold text-xl text-gray-700">Following</div>
+          <span class="material-symbols-outlined">add</span>
+        </div>
+      </div>
+      <!-- Below For You  -->
+      <section class="flex items-center justify-center p-3 gap-4">
+        <span class="material-symbols-outlined text-5xl! hover:cursor-pointer">account_circle</span>
+        <div class="font-extralight text-gray-400 text-2xl w-full">What's happening?</div>
+      </section>
+
+      <section class="flex items-center justify-between p-3 border-b border-slate-600">
+        <div class="w-full flex justify-center items-center gap-4">
+          <span class="material-symbols-outlined text-gray-300 hover:cursor-pointer">image</span>
+          <span class="material-symbols-outlined text-gray-300 hover:cursor-pointer">gif_box</span>
+          <span class="material-symbols-outlined text-gray-300 hover:cursor-pointer">assistant_device</span>
+          <span class="material-symbols-outlined text-gray-300 hover:cursor-pointer">list</span>
+          <span class="material-symbols-outlined text-gray-300 hover:cursor-pointer">mood</span>
+          <span class="material-symbols-outlined text-gray-300 hover:cursor-pointer">event</span>
+          <span class="material-symbols-outlined text-gray-300">location_on</span>
+          <span class="material-symbols-outlined text-gray-300 hover:cursor-pointer">flag_2</span>
+        </div>
+        <button class="text-black bg-slate-700 font-bold rounded-full h-9 w-1/7 mr-5">Post</button>
+      </section>
+
+      <!-- Show posts  -->
+      <div class="text-blue-400 text-center border-b border-slate-600 py-3 hover:cursor-pointer">Show 245 posts</div>
+
+      <!-- Posts  -->
+      <!-- Post 1 -->
+      <section class="p-3 hover:cursor-pointer flex gap-1 border-b border-slate-600">
+        <span class="material-symbols-outlined text-5xl! hover:cursor-pointer">account_circle</span>
+        <div class="w-full mr-2">
+          <div class="flex justify-between my-2">
+            <div class="flex items-center gap-1 hover:cursor-pointer">
+              <div class="font-semibold text-lg hover:underline">Eren Yeager</div>
+              <span class="material-symbols-outlined text-blue-600">verified</span>
+              <p class="text-gray-400 font-light">@eren_yeager ·
+              <p class="hover:underline">2h</p>
+              </p>
+            </div>
+            <div>
+              <span class="material-symbols-outlined text-gray-300 hover:cursor-pointer">assistant_device</span>
+              <span class="material-symbols-outlined text-gray-300 hover:cursor-pointer">more_horiz</span>
+            </div>
+          </div>
+          <div class="mb-2">
+            I kept moving forward because standing still was never an option. No matter what was waiting ahead, I chose
+            to keep fighting for the freedom I believed in.
+          </div>
+          <div class="w-full rounded-2xl overflow-hidden">
+            <img src="assets/eren-yeager-3840x2743-10405.jpg" alt="Eren Yeager">
+          </div>
+        </div>
+      </section>
+
+      <!-- Post 2 -->
+      <section class="p-3 hover:cursor-pointer flex gap-1 border-b border-slate-600">
+        <span class="material-symbols-outlined text-5xl! hover:cursor-pointer">account_circle</span>
+        <div class="w-full mr-2">
+          <div class="flex justify-between my-2">
+            <div class="flex items-center gap-1 hover:cursor-pointer">
+              <div class="font-semibold text-lg hover:underline">Karasuno High</div>
+              <span class="material-symbols-outlined text-blue-600">verified</span>
+              <p class="text-gray-400 font-light">@karasuno_fly ·
+              <p class="hover:underline">5h</p>
+              </p>
+            </div>
+            <div>
+              <span class="material-symbols-outlined text-gray-300 hover:cursor-pointer">assistant_device</span>
+              <span class="material-symbols-outlined text-gray-300 hover:cursor-pointer">more_horiz</span>
+            </div>
+          </div>
+          <div class="mb-2">
+            Fly high, Karasuno! Every practice, every defeat, and every victory brought us closer together. We're not
+            the strongest because we never lose—we're strong because we always get back up and keep fighting for the
+            next point.
+          </div>
+          <div class="w-full rounded-2xl overflow-hidden">
+            <img src="assets/haikyu-fly-high-key-5120x2880-21472.jpg" alt="Karasuno Team">
+          </div>
+        </div>
+      </section>
+
+      <!-- Post 3 -->
+      <section class="p-3 hover:cursor-pointer flex gap-1 border-b border-slate-600">
+        <span class="material-symbols-outlined text-5xl! hover:cursor-pointer">account_circle</span>
+        <div class="w-full mr-2">
+          <div class="flex justify-between my-2">
+            <div class="flex items-center gap-1 hover:cursor-pointer">
+              <div class="font-semibold text-lg hover:underline">Yuji Itadori</div>
+              <span class="material-symbols-outlined text-blue-600">verified</span>
+              <p class="text-gray-400 font-light">@yuji_choso ·
+              <p class="hover:underline">8h</p>
+              </p>
+            </div>
+            <div>
+              <span class="material-symbols-outlined text-gray-300 hover:cursor-pointer">assistant_device</span>
+              <span class="material-symbols-outlined text-gray-300 hover:cursor-pointer">more_horiz</span>
+            </div>
+          </div>
+          <div class="mb-2">
+            Sometimes the people who stand beside you in the hardest moments become the family you never expected to
+            have.
+            Through every battle and every loss, we keep moving forward and protecting the bonds that matter most.
+          </div>
+          <div class="w-full rounded-2xl overflow-hidden">
+            <img src="assets/yuji-itadori-choso-7680x4320-25230.jpg" alt="Itadori and Choso">
+          </div>
+        </div>
+      </section>
+
+      <!-- Post 4 -->
+      <section class="p-3 hover:cursor-pointer flex gap-1 border-b border-slate-600">
+        <span class="material-symbols-outlined text-5xl! hover:cursor-pointer">account_circle</span>
+        <div class="w-full mr-2">
+          <div class="flex justify-between my-2">
+            <div class="flex items-center gap-1 hover:cursor-pointer">
+              <div class="font-semibold text-lg hover:underline">Denji</div>
+              <span class="material-symbols-outlined text-blue-600">verified</span>
+              <p class="text-gray-400 font-light">@chainsaw_denji ·
+              <p class="hover:underline">10h</p>
+              </p>
+            </div>
+            <div>
+              <span class="material-symbols-outlined text-gray-300 hover:cursor-pointer">assistant_device</span>
+              <span class="material-symbols-outlined text-gray-300 hover:cursor-pointer">more_horiz</span>
+            </div>
+          </div>
+          <div class="mb-2">
+            Life doesn't always give you what you want. Sometimes all you can do is keep moving forward, chase the
+            little
+            things that make you happy, and enjoy whatever good moments come your way.
+          </div>
+          <div class="w-full rounded-2xl overflow-hidden">
+            <img src="assets/denji-artwork-5120x3657-13802.jpg" alt="Denji">
+          </div>
+        </div>
+      </section>
+
+      <!-- Post 5 -->
+      <section class="p-3 hover:cursor-pointer flex gap-1 border-b border-slate-600">
+        <span class="material-symbols-outlined text-5xl! hover:cursor-pointer">account_circle</span>
+        <div class="w-full mr-2">
+          <div class="flex justify-between my-2">
+            <div class="flex items-center gap-1 hover:cursor-pointer">
+              <div class="font-semibold text-lg hover:underline">Hell's Paradise</div>
+              <span class="material-symbols-outlined text-blue-600">verified</span>
+              <p class="text-gray-400 font-light">@hellsparadise ·
+              <p class="hover:underline">12h</p>
+              </p>
+            </div>
+            <div>
+              <span class="material-symbols-outlined text-gray-300 hover:cursor-pointer">assistant_device</span>
+              <span class="material-symbols-outlined text-gray-300 hover:cursor-pointer">more_horiz</span>
+            </div>
+          </div>
+          <div class="mb-2">
+            In a place where beauty and death exist side by side, every step forward comes with a price. Survival means
+            facing the unknown and finding the strength to keep going.
+          </div>
+          <div class="w-full rounded-2xl overflow-hidden">
+            <img src="assets/hells-paradise-3840x2160-25457.jpg" alt="Hell's Paradise Cover">
+          </div>
+        </div>
+      </section>
+
+      <!-- Post 6 -->
+      <section class="p-3 hover:cursor-pointer flex gap-1 border-b border-slate-600">
+        <span class="material-symbols-outlined text-5xl! hover:cursor-pointer">account_circle</span>
+        <div class="w-full mr-2">
+          <div class="flex justify-between my-2">
+            <div class="flex items-center gap-1 hover:cursor-pointer">
+              <div class="font-semibold text-lg hover:underline">Itachi Uchiha</div>
+              <span class="material-symbols-outlined text-blue-600">verified</span>
+              <p class="text-gray-400 font-light">@itachi_uchiha ·
+              <p class="hover:underline">1d</p>
+              </p>
+            </div>
+            <div>
+              <span class="material-symbols-outlined text-gray-300 hover:cursor-pointer">assistant_device</span>
+              <span class="material-symbols-outlined text-gray-300 hover:cursor-pointer">more_horiz</span>
+            </div>
+          </div>
+          <div class="mb-2">
+            Some truths are painful to accept, and some choices can never be explained to everyone. What matters is
+            having
+            the strength to carry your decisions and protect the people you love.
+          </div>
+          <div class="w-full rounded-2xl overflow-hidden">
+            <img src="assets/itachi-uchiha-8k-7680x9774-25550.jpg" alt="Itachi Uchiha">
+          </div>
+        </div>
+      </section>
+
+      <!-- Post 7 -->
+      <section class="p-3 hover:cursor-pointer flex gap-1 border-b border-slate-600">
+        <span class="material-symbols-outlined text-5xl! hover:cursor-pointer">account_circle</span>
+        <div class="w-full mr-2">
+          <div class="flex justify-between my-2">
+            <div class="flex items-center gap-1 hover:cursor-pointer">
+              <div class="font-semibold text-lg hover:underline">Ken Kaneki</div>
+              <span class="material-symbols-outlined text-blue-600">verified</span>
+              <p class="text-gray-400 font-light">@kaneki_ken ·
+              <p class="hover:underline">1d</p>
+              </p>
+            </div>
+            <div>
+              <span class="material-symbols-outlined text-gray-300 hover:cursor-pointer">assistant_device</span>
+              <span class="material-symbols-outlined text-gray-300 hover:cursor-pointer">more_horiz</span>
+            </div>
+          </div>
+          <div class="mb-2">
+            I used to think that being alone meant being strong. But sometimes the people we meet along the way become
+            the reason we find the courage to keep living, even when everything feels broken.
+          </div>
+          <div class="w-full rounded-2xl overflow-hidden">
+            <img src="assets/ken-kaneki-gothic-5120x2880-18719.jpg" alt="Ken Kaneki">
+          </div>
+        </div>
+      </section>
+
+      <!-- Post 8 -->
+      <section class="p-3 hover:cursor-pointer flex gap-1 border-b border-slate-600">
+        <span class="material-symbols-outlined text-5xl! hover:cursor-pointer">account_circle</span>
+        <div class="w-full mr-2">
+          <div class="flex justify-between my-2">
+            <div class="flex items-center gap-1 hover:cursor-pointer">
+              <div class="font-semibold text-lg hover:underline">One Piece</div>
+              <span class="material-symbols-outlined text-blue-600">verified</span>
+              <p class="text-gray-400 font-light">@onepiece_egghead ·
+              <p class="hover:underline">2d</p>
+              </p>
+            </div>
+            <div>
+              <span class="material-symbols-outlined text-gray-300 hover:cursor-pointer">assistant_device</span>
+              <span class="material-symbols-outlined text-gray-300 hover:cursor-pointer">more_horiz</span>
+            </div>
+          </div>
+          <div class="mb-2">
+            The adventure continues into a world full of mysteries, impossible dreams, and battles that will shape the
+            future. The crew keeps sailing forward, no matter what waits beyond the horizon.
+          </div>
+          <div class="w-full rounded-2xl overflow-hidden">
+            <img src="assets/one-piece-season-15-3840x2160-22064.jpg" alt="One Piece Egghead Cover">
+          </div>
+        </div>
+      </section>
+
+      <!-- Post 9 -->
+      <section class="p-3 hover:cursor-pointer flex gap-1 border-b border-slate-600">
+        <span class="material-symbols-outlined text-5xl! hover:cursor-pointer">account_circle</span>
+        <div class="w-full mr-2">
+          <div class="flex justify-between my-2">
+            <div class="flex items-center gap-1 hover:cursor-pointer">
+              <div class="font-semibold text-lg hover:underline">Team 7</div>
+              <span class="material-symbols-outlined text-blue-600">verified</span>
+              <p class="text-gray-400 font-light">@team7_shinobi ·
+              <p class="hover:underline">2d</p>
+              </p>
+            </div>
+            <div>
+              <span class="material-symbols-outlined text-gray-300 hover:cursor-pointer">assistant_device</span>
+              <span class="material-symbols-outlined text-gray-300 hover:cursor-pointer">more_horiz</span>
+            </div>
+          </div>
+          <div class="mb-2">
+            Different personalities, different dreams, and a journey none of them could have completed alone. No matter
+            how far they went, the bonds they built as Team 7 remained unforgettable.
+          </div>
+          <div class="w-full rounded-2xl overflow-hidden">
+            <img src="assets/sakura-haruno-3840x2439-15459.jpg" alt="Naruto Team 7">
+          </div>
+        </div>
+      </section>
+
+      <!-- Post 10 -->
+      <section class="p-3 hover:cursor-pointer flex gap-1 border-b border-slate-600">
+        <span class="material-symbols-outlined text-5xl! hover:cursor-pointer">account_circle</span>
+        <div class="w-full mr-2">
+          <div class="flex justify-between my-2">
+            <div class="flex items-center gap-1 hover:cursor-pointer">
+              <div class="font-semibold text-lg hover:underline">Sasaki & Yamada</div>
+              <span class="material-symbols-outlined text-blue-600">verified</span>
+              <p class="text-gray-400 font-light">@smoking_supermarket ·
+              <p class="hover:underline">3d</p>
+              </p>
+            </div>
+            <div>
+              <span class="material-symbols-outlined text-gray-300 hover:cursor-pointer">assistant_device</span>
+              <span class="material-symbols-outlined text-gray-300 hover:cursor-pointer">more_horiz</span>
+            </div>
+          </div>
+          <div class="mb-2">
+            Sometimes the simplest conversations become the moments you remember the most. A quiet evening, a cigarette
+            break, and two people slowly getting to know each other without rushing anything.
+          </div>
+          <div class="w-full rounded-2xl overflow-hidden">
+            <img src="assets/sasaki-yamada-5120x2880-26451.jpg" alt="Sasaki and Yamada">
+          </div>
+        </div>
+      </section>
+    </div>
 
     <!-- Third  -->
-    <div class="w-full relative">
+    <div class="w-full sticky bottom-0 self-end">
       <!-- Search  -->
       <div class="bg-black top-0 sticky z-50 pt-4">
         <section class="flex gap-2 border relative border-slate-600 rounded-full w-3/5 ml-8 h-10 pl-4">
@@ -224,10 +533,12 @@
       <!-- Below Who to Follow  -->
       <section class="w-3/5 my-4 mx-8 pl-4">
         <div class="text-xs text-gray-500"><span>Terms</span> · <span>Privacy</span> · <span>Cookies</span> ·
-          <span>Accessibility</span> ·</div>
+          <span>Accessibility</span> ·
+        </div>
         <div class="text-xs text-gray-500"><span>Ads Info</span> · <span class="inline-flex  items-center"><span>More
             </span><span class="material-symbols-outlined text-xs font-extralight">more_horiz</span></span> ·
-          <span>&copy; 2026 X Corp.</span></div>
+          <span>&copy; 2026 X Corp.</span>
+        </div>
       </section>
     </div>
   </div>
