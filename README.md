@@ -8,7 +8,7 @@ The project recreates the desktop and mobile experience with a left navigation r
 
 ## 🚀 Live Demo
 
-**[View Live Demo](YOUR_NETLIFY_URL_HERE)**
+**[View Live Demo](x-clone-tailwind-vite.netlify.app)**
 
 ## ✨ Features
 
