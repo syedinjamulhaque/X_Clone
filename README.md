@@ -6,7 +6,7 @@ The project recreates the desktop and mobile experience with a left navigation r
 
 > **Note:** This is a front-end UI project. It does not include authentication, database integration, real-time posts, search functionality, or other backend features.
 
-## 🚀 Live Demo
+## 🚀 Live Demo - Check it Out
 
 **[View Live Demo](x-clone-tailwind-vite.netlify.app)**
 
