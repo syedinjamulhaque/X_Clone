@@ -9,83 +9,104 @@
   <link href="/src/style.css" rel="stylesheet">
   <style>
     html {
-      overflow-x: hidden;
+      overflow-x: clip;
       max-width: 100%;
+    }
+
+    body {
+      overflow-x: clip;
+      margin: 0;
     }
   </style>
   <title>Home / X</title>
 </head>
 
-<body class="text-white bg-black overflow-x-hidden">
-  <div class="flex relative container mx-auto min-w-0">
+<body class="text-white bg-black">
+  <div class="flex items-start relative container mx-auto min-w-0">
+
     <!-- First -->
-    <div class="hidden md:block md:w-20 xl:w-1/4 pt-3.5 h-screen top-0 sticky shrink-0">
+    <div class="hidden md:block md:w-20 xl:w-1/4 pt-3.5 sticky top-0 self-start shrink-0 h-fit">
+
       <!-- Icon -->
-      <div class="flex flex-col items-center mb-5">
+      <div class="flex flex-col items-center xl:items-start xl:pl-6 mb-5">
         <img src="/x.svg" alt="X-Icon" class="w-8">
       </div>
+
       <!-- Below Icon -->
-      <div class="flex flex-col items-center">
+      <div class="flex flex-col items-center xl:items-start xl:pl-6">
         <ul class="space-y-6 flex flex-col">
           <li class="flex gap-3">
             <span class="material-symbols-outlined">home</span>
             <span class="font-medium text-xl max-xl:hidden">Home</span>
           </li>
+
           <li class="flex gap-3">
             <span class="material-symbols-outlined">search</span>
             <span class="font-medium text-xl max-xl:hidden">Explore</span>
           </li>
+
           <li class="flex gap-3">
             <span class="material-symbols-outlined">notifications</span>
             <span class="font-medium text-xl max-xl:hidden">Notifications</span>
           </li>
+
           <li class="flex gap-3">
             <span class="material-symbols-outlined">person_add</span>
             <span class="font-medium text-xl max-xl:hidden">Follow</span>
           </li>
+
           <li class="flex gap-3">
             <span class="material-symbols-outlined">chat</span>
             <span class="font-medium text-xl max-xl:hidden">Chat</span>
           </li>
+
           <li class="flex gap-3">
             <span class="material-symbols-outlined">assistant_device</span>
             <span class="font-medium text-xl max-xl:hidden">Grok</span>
           </li>
+
           <li class="flex gap-3">
             <span class="material-symbols-outlined">bookmark</span>
             <span class="font-medium text-xl max-xl:hidden">History</span>
           </li>
+
           <li class="flex gap-3">
             <span class="material-symbols-outlined">plane_contrails</span>
             <span class="font-medium text-xl max-xl:hidden">Creator Studio</span>
           </li>
+
           <li class="flex gap-3">
             <span class="material-symbols-outlined">check_circle</span>
             <span class="font-medium text-xl max-xl:hidden">Premium</span>
           </li>
+
           <li class="flex gap-3">
             <span class="material-symbols-outlined">person</span>
             <span class="font-medium text-xl max-xl:hidden">Profile</span>
           </li>
+
           <li class="flex gap-3">
             <span class="material-symbols-outlined">more_horiz</span>
             <span class="font-medium text-xl max-xl:hidden">More</span>
           </li>
         </ul>
       </div>
+
       <!-- Post Button -->
-      <div class="flex justify-center mt-6 xl:justify-end xl:mr-6">
+      <div class="flex justify-center mt-6 xl:justify-start xl:pl-5">
         <button class="bg-white w-12 xl:w-[70%] rounded-full h-13 text-black font-semibold text-xl">
           <span class="xl:hidden">+</span>
           <span class="hidden xl:inline">Post</span>
         </button>
       </div>
+
       <!-- Profile  -->
-      <div class="flex justify-center xl:justify-end items-center gap-10 pt-12">
+      <div class="flex justify-center xl:justify-start items-center gap-10 pt-12 xl:pl-5">
         <div class="flex gap-2 min-w-0">
           <div>
             <span class="material-symbols-outlined text-5xl! max-xl:text-4xl!">account_circle</span>
           </div>
+
           <button class="hidden xl:flex flex-col items-start font-semibold min-w-0">
             Captain
             <span class="font-extralight text-gray-400 truncate max-w-full">
@@ -93,6 +114,7 @@
             </span>
           </button>
         </div>
+
         <div class="hidden xl:block">
           <span class="material-symbols-outlined mr-5 text-xl!">more_horiz</span>
         </div>
@@ -101,17 +123,23 @@
 
     <!-- Second  -->
     <div class="w-full md:flex-1 xl:w-1/2 border-x border-slate-600 relative min-w-0">
+
       <!-- For you  -->
       <div class="sticky top-0 backdrop-blur-sm z-40">
-        <div class="grid grid-cols-[minmax(0,8fr)_minmax(0,8fr)_minmax(0,1fr)] text-center border-b border-slate-600 h-12 pt-2 hover:cursor-pointer">
+        <div
+          class="grid grid-cols-[minmax(0,8fr)_minmax(0,8fr)_minmax(0,1fr)] text-center border-b border-slate-600 h-12 pt-2 hover:cursor-pointer">
+
           <div class="flex flex-col gap-2 items-center overflow-y-hidden min-w-0">
             <div class="font-bold text-xl">For you</div>
             <span class="border-3 overflow-y-hidden rounded-full border-blue-700 w-1/4"></span>
           </div>
+
           <div class="font-bold text-xl text-gray-700 min-w-0">Following</div>
+
           <span class="material-symbols-outlined">add</span>
         </div>
       </div>
+
       <!-- Below For You  -->
       <section class="flex items-center justify-center p-3 gap-4">
         <span class="material-symbols-outlined text-5xl! shrink-0 hover:cursor-pointer">account_circle</span>
@@ -129,6 +157,7 @@
           <span class="material-symbols-outlined text-gray-300">location_on</span>
           <span class="material-symbols-outlined text-gray-300 hover:cursor-pointer">flag_2</span>
         </div>
+
         <button class="text-black bg-slate-700 font-bold rounded-full h-9 px-4 shrink-0">Post</button>
       </section>
 
@@ -139,27 +168,68 @@
       <!-- Post 1 -->
       <section class="p-3 hover:cursor-pointer flex gap-2 border-b border-slate-600">
         <span class="material-symbols-outlined text-5xl! shrink-0 hover:cursor-pointer">account_circle</span>
+
         <div class="w-full min-w-0">
           <div class="flex justify-between items-start gap-2 my-2">
             <div class="flex items-center gap-1 min-w-0 overflow-hidden">
               <div class="font-semibold text-lg hover:underline min-w-0 truncate">Eren Yeager</div>
               <span class="material-symbols-outlined text-blue-600 shrink-0">verified</span>
+
               <div class="text-gray-400 font-light flex gap-1 whitespace-nowrap shrink-0">
                 <span>@eren_yeager ·</span>
                 <span class="hover:underline">2h</span>
               </div>
             </div>
+
             <div class="flex shrink-0">
               <span class="material-symbols-outlined text-gray-300 hover:cursor-pointer">assistant_device</span>
               <span class="material-symbols-outlined text-gray-300 hover:cursor-pointer">more_horiz</span>
             </div>
           </div>
+
           <div class="mb-2 wrap-break-word">
             I kept moving forward because standing still was never an option. No matter what was waiting ahead, I chose
             to keep fighting for the freedom I believed in.
           </div>
+
           <div class="w-full rounded-2xl overflow-hidden">
-            <img src="assets/eren-yeager-3840x2743-10405.jpg" alt="Eren Yeager" loading="lazy" class="w-full h-auto block">
+            <img src="assets/eren-yeager-3840x2743-10405.jpg" alt="Eren Yeager" loading="lazy"
+              class="w-full h-auto block">
+          </div>
+          <div class="mt-4">
+            <div class="flex items-center justify-between w-full text-gray-500 text-sm">
+
+              <!-- Reply -->
+              <div class="flex items-center gap-1">
+                <span class="material-symbols-outlined text-[19px]!">chat_bubble_outline</span>
+                <span>383</span>
+              </div>
+
+              <!-- Repost -->
+              <div class="flex items-center gap-1">
+                <span class="material-symbols-outlined text-[19px]!">repeat</span>
+                <span>2.5K</span>
+              </div>
+
+              <!-- Like -->
+              <div class="flex items-center gap-1">
+                <span class="material-symbols-outlined text-[19px]!">favorite_border</span>
+                <span>15K</span>
+              </div>
+
+              <!-- Views -->
+              <div class="flex items-center gap-1">
+                <span class="material-symbols-outlined text-[19px]!">bar_chart</span>
+                <span>3.7M</span>
+              </div>
+
+              <!-- Bookmark -->
+              <span class="material-symbols-outlined text-[19px]!">bookmark_border</span>
+
+              <!-- Share -->
+              <span class="material-symbols-outlined text-[19px]!">ios_share</span>
+
+            </div>
           </div>
         </div>
       </section>
@@ -167,28 +237,69 @@
       <!-- Post 2 -->
       <section class="p-3 hover:cursor-pointer flex gap-2 border-b border-slate-600">
         <span class="material-symbols-outlined text-5xl! shrink-0 hover:cursor-pointer">account_circle</span>
+
         <div class="w-full min-w-0">
           <div class="flex justify-between items-start gap-2 my-2">
             <div class="flex items-center gap-1 min-w-0 overflow-hidden">
               <div class="font-semibold text-lg hover:underline min-w-0 truncate">Karasuno High</div>
               <span class="material-symbols-outlined text-blue-600 shrink-0">verified</span>
+
               <div class="text-gray-400 font-light flex gap-1 whitespace-nowrap shrink-0">
                 <span>@karasuno_fly ·</span>
                 <span class="hover:underline">5h</span>
               </div>
             </div>
+
             <div class="flex shrink-0">
               <span class="material-symbols-outlined text-gray-300 hover:cursor-pointer">assistant_device</span>
               <span class="material-symbols-outlined text-gray-300 hover:cursor-pointer">more_horiz</span>
             </div>
           </div>
+
           <div class="mb-2 wrap-break-word">
             Fly high, Karasuno! Every practice, every defeat, and every victory brought us closer together. We're not
             the strongest because we never lose—we're strong because we always get back up and keep fighting for the
             next point.
           </div>
+
           <div class="w-full rounded-2xl overflow-hidden">
-            <img src="assets/haikyu-fly-high-key-5120x2880-21472.jpg" alt="Karasuno Team" loading="lazy" class="w-full h-auto block">
+            <img src="assets/haikyu-fly-high-key-5120x2880-21472.jpg" alt="Karasuno Team" loading="lazy"
+              class="w-full h-auto block">
+          </div>
+          <div class="mt-4">
+            <div class="flex items-center justify-between w-full text-gray-500 text-sm">
+
+              <!-- Reply -->
+              <div class="flex items-center gap-1">
+                <span class="material-symbols-outlined text-[19px]!">chat_bubble_outline</span>
+                <span>383</span>
+              </div>
+
+              <!-- Repost -->
+              <div class="flex items-center gap-1">
+                <span class="material-symbols-outlined text-[19px]!">repeat</span>
+                <span>2.5K</span>
+              </div>
+
+              <!-- Like -->
+              <div class="flex items-center gap-1">
+                <span class="material-symbols-outlined text-[19px]!">favorite_border</span>
+                <span>15K</span>
+              </div>
+
+              <!-- Views -->
+              <div class="flex items-center gap-1">
+                <span class="material-symbols-outlined text-[19px]!">bar_chart</span>
+                <span>3.7M</span>
+              </div>
+
+              <!-- Bookmark -->
+              <span class="material-symbols-outlined text-[19px]!">bookmark_border</span>
+
+              <!-- Share -->
+              <span class="material-symbols-outlined text-[19px]!">ios_share</span>
+
+            </div>
           </div>
         </div>
       </section>
@@ -196,27 +307,68 @@
       <!-- Post 3 -->
       <section class="p-3 hover:cursor-pointer flex gap-2 border-b border-slate-600">
         <span class="material-symbols-outlined text-5xl! shrink-0 hover:cursor-pointer">account_circle</span>
+
         <div class="w-full min-w-0">
           <div class="flex justify-between items-start gap-2 my-2">
             <div class="flex items-center gap-1 min-w-0 overflow-hidden">
               <div class="font-semibold text-lg hover:underline min-w-0 truncate">Yuji Itadori</div>
               <span class="material-symbols-outlined text-blue-600 shrink-0">verified</span>
+
               <div class="text-gray-400 font-light flex gap-1 whitespace-nowrap shrink-0">
                 <span>@yuji_choso ·</span>
                 <span class="hover:underline">8h</span>
               </div>
             </div>
+
             <div class="flex shrink-0">
               <span class="material-symbols-outlined text-gray-300 hover:cursor-pointer">assistant_device</span>
               <span class="material-symbols-outlined text-gray-300 hover:cursor-pointer">more_horiz</span>
             </div>
           </div>
+
           <div class="mb-2 wrap-break-word">
             Sometimes the people who stand beside you in the hardest moments become the family you never expected to
             have. Through every battle and every loss, we keep moving forward and protecting the bonds that matter most.
           </div>
+
           <div class="w-full rounded-2xl overflow-hidden">
-            <img src="assets/yuji-itadori-choso-7680x4320-25230.jpg" alt="Itadori and Choso" loading="lazy" class="w-full h-auto block">
+            <img src="assets/yuji-itadori-choso-7680x4320-25230.jpg" alt="Itadori and Choso" loading="lazy"
+              class="w-full h-auto block">
+          </div>
+          <div class="mt-4">
+            <div class="flex items-center justify-between w-full text-gray-500 text-sm">
+
+              <!-- Reply -->
+              <div class="flex items-center gap-1">
+                <span class="material-symbols-outlined text-[19px]!">chat_bubble_outline</span>
+                <span>383</span>
+              </div>
+
+              <!-- Repost -->
+              <div class="flex items-center gap-1">
+                <span class="material-symbols-outlined text-[19px]!">repeat</span>
+                <span>2.5K</span>
+              </div>
+
+              <!-- Like -->
+              <div class="flex items-center gap-1">
+                <span class="material-symbols-outlined text-[19px]!">favorite_border</span>
+                <span>15K</span>
+              </div>
+
+              <!-- Views -->
+              <div class="flex items-center gap-1">
+                <span class="material-symbols-outlined text-[19px]!">bar_chart</span>
+                <span>3.7M</span>
+              </div>
+
+              <!-- Bookmark -->
+              <span class="material-symbols-outlined text-[19px]!">bookmark_border</span>
+
+              <!-- Share -->
+              <span class="material-symbols-outlined text-[19px]!">ios_share</span>
+
+            </div>
           </div>
         </div>
       </section>
@@ -224,25 +376,30 @@
       <!-- Post 4 -->
       <section class="p-3 hover:cursor-pointer flex gap-2 border-b border-slate-600">
         <span class="material-symbols-outlined text-5xl! shrink-0 hover:cursor-pointer">account_circle</span>
+
         <div class="w-full min-w-0">
           <div class="flex justify-between items-start gap-2 my-2">
             <div class="flex items-center gap-1 min-w-0 overflow-hidden">
               <div class="font-semibold text-lg hover:underline min-w-0 truncate">Denji</div>
               <span class="material-symbols-outlined text-blue-600 shrink-0">verified</span>
+
               <div class="text-gray-400 font-light flex gap-1 whitespace-nowrap shrink-0">
                 <span>@chainsaw_denji ·</span>
                 <span class="hover:underline">10h</span>
               </div>
             </div>
+
             <div class="flex shrink-0">
               <span class="material-symbols-outlined text-gray-300 hover:cursor-pointer">assistant_device</span>
               <span class="material-symbols-outlined text-gray-300 hover:cursor-pointer">more_horiz</span>
             </div>
           </div>
+
           <div class="mb-2 wrap-break-word">
             Life doesn't always give you what you want. Sometimes all you can do is keep moving forward, chase the
             little things that make you happy, and enjoy whatever good moments come your way.
           </div>
+
           <div class="w-full rounded-2xl overflow-hidden">
             <img src="assets/denji-artwork-5120x3657-13802.jpg" alt="Denji" loading="lazy" class="w-full h-auto block">
           </div>
@@ -252,27 +409,68 @@
       <!-- Post 5 -->
       <section class="p-3 hover:cursor-pointer flex gap-2 border-b border-slate-600">
         <span class="material-symbols-outlined text-5xl! shrink-0 hover:cursor-pointer">account_circle</span>
+
         <div class="w-full min-w-0">
           <div class="flex justify-between items-start gap-2 my-2">
             <div class="flex items-center gap-1 min-w-0 overflow-hidden">
               <div class="font-semibold text-lg hover:underline min-w-0 truncate">Hell's Paradise</div>
               <span class="material-symbols-outlined text-blue-600 shrink-0">verified</span>
+
               <div class="text-gray-400 font-light flex gap-1 whitespace-nowrap shrink-0">
                 <span>@hellsparadise ·</span>
                 <span class="hover:underline">12h</span>
               </div>
             </div>
+
             <div class="flex shrink-0">
               <span class="material-symbols-outlined text-gray-300 hover:cursor-pointer">assistant_device</span>
               <span class="material-symbols-outlined text-gray-300 hover:cursor-pointer">more_horiz</span>
             </div>
           </div>
+
           <div class="mb-2 wrap-break-word">
             In a place where beauty and death exist side by side, every step forward comes with a price. Survival means
             facing the unknown and finding the strength to keep going.
           </div>
+
           <div class="w-full rounded-2xl overflow-hidden">
-            <img src="assets/hells-paradise-3840x2160-25457.jpg" alt="Hell's Paradise Cover" loading="lazy" class="w-full h-auto block">
+            <img src="assets/hells-paradise-3840x2160-25457.jpg" alt="Hell's Paradise Cover" loading="lazy"
+              class="w-full h-auto block">
+          </div>
+          <div class="mt-4">
+            <div class="flex items-center justify-between w-full text-gray-500 text-sm">
+
+              <!-- Reply -->
+              <div class="flex items-center gap-1">
+                <span class="material-symbols-outlined text-[19px]!">chat_bubble_outline</span>
+                <span>383</span>
+              </div>
+
+              <!-- Repost -->
+              <div class="flex items-center gap-1">
+                <span class="material-symbols-outlined text-[19px]!">repeat</span>
+                <span>2.5K</span>
+              </div>
+
+              <!-- Like -->
+              <div class="flex items-center gap-1">
+                <span class="material-symbols-outlined text-[19px]!">favorite_border</span>
+                <span>15K</span>
+              </div>
+
+              <!-- Views -->
+              <div class="flex items-center gap-1">
+                <span class="material-symbols-outlined text-[19px]!">bar_chart</span>
+                <span>3.7M</span>
+              </div>
+
+              <!-- Bookmark -->
+              <span class="material-symbols-outlined text-[19px]!">bookmark_border</span>
+
+              <!-- Share -->
+              <span class="material-symbols-outlined text-[19px]!">ios_share</span>
+
+            </div>
           </div>
         </div>
       </section>
@@ -280,27 +478,68 @@
       <!-- Post 6 -->
       <section class="p-3 hover:cursor-pointer flex gap-2 border-b border-slate-600">
         <span class="material-symbols-outlined text-5xl! shrink-0 hover:cursor-pointer">account_circle</span>
+
         <div class="w-full min-w-0">
           <div class="flex justify-between items-start gap-2 my-2">
             <div class="flex items-center gap-1 min-w-0 overflow-hidden">
               <div class="font-semibold text-lg hover:underline min-w-0 truncate">Itachi Uchiha</div>
               <span class="material-symbols-outlined text-blue-600 shrink-0">verified</span>
+
               <div class="text-gray-400 font-light flex gap-1 whitespace-nowrap shrink-0">
                 <span>@itachi_uchiha ·</span>
                 <span class="hover:underline">1d</span>
               </div>
             </div>
+
             <div class="flex shrink-0">
               <span class="material-symbols-outlined text-gray-300 hover:cursor-pointer">assistant_device</span>
               <span class="material-symbols-outlined text-gray-300 hover:cursor-pointer">more_horiz</span>
             </div>
           </div>
+
           <div class="mb-2 wrap-break-word">
             Some truths are painful to accept, and some choices can never be explained to everyone. What matters is
             having the strength to carry your decisions and protect the people you love.
           </div>
+
           <div class="w-full rounded-2xl overflow-hidden">
-            <img src="assets/itachi-uchiha-8k-7680x9774-25550.jpg" alt="Itachi Uchiha" loading="lazy" class="w-full h-auto block">
+            <img src="assets/itachi-uchiha-8k-7680x9774-25550.jpg" alt="Itachi Uchiha" loading="lazy"
+              class="w-full h-auto block">
+          </div>
+          <div class="mt-4">
+            <div class="flex items-center justify-between w-full text-gray-500 text-sm">
+
+              <!-- Reply -->
+              <div class="flex items-center gap-1">
+                <span class="material-symbols-outlined text-[19px]!">chat_bubble_outline</span>
+                <span>383</span>
+              </div>
+
+              <!-- Repost -->
+              <div class="flex items-center gap-1">
+                <span class="material-symbols-outlined text-[19px]!">repeat</span>
+                <span>2.5K</span>
+              </div>
+
+              <!-- Like -->
+              <div class="flex items-center gap-1">
+                <span class="material-symbols-outlined text-[19px]!">favorite_border</span>
+                <span>15K</span>
+              </div>
+
+              <!-- Views -->
+              <div class="flex items-center gap-1">
+                <span class="material-symbols-outlined text-[19px]!">bar_chart</span>
+                <span>3.7M</span>
+              </div>
+
+              <!-- Bookmark -->
+              <span class="material-symbols-outlined text-[19px]!">bookmark_border</span>
+
+              <!-- Share -->
+              <span class="material-symbols-outlined text-[19px]!">ios_share</span>
+
+            </div>
           </div>
         </div>
       </section>
@@ -308,27 +547,68 @@
       <!-- Post 7 -->
       <section class="p-3 hover:cursor-pointer flex gap-2 border-b border-slate-600">
         <span class="material-symbols-outlined text-5xl! shrink-0 hover:cursor-pointer">account_circle</span>
+
         <div class="w-full min-w-0">
           <div class="flex justify-between items-start gap-2 my-2">
             <div class="flex items-center gap-1 min-w-0 overflow-hidden">
               <div class="font-semibold text-lg hover:underline min-w-0 truncate">Ken Kaneki</div>
               <span class="material-symbols-outlined text-blue-600 shrink-0">verified</span>
+
               <div class="text-gray-400 font-light flex gap-1 whitespace-nowrap shrink-0">
                 <span>@kaneki_ken ·</span>
                 <span class="hover:underline">1d</span>
               </div>
             </div>
+
             <div class="flex shrink-0">
               <span class="material-symbols-outlined text-gray-300 hover:cursor-pointer">assistant_device</span>
               <span class="material-symbols-outlined text-gray-300 hover:cursor-pointer">more_horiz</span>
             </div>
           </div>
+
           <div class="mb-2 wrap-break-word">
             I used to think that being alone meant being strong. But sometimes the people we meet along the way become
             the reason we find the courage to keep living, even when everything feels broken.
           </div>
+
           <div class="w-full rounded-2xl overflow-hidden">
-            <img src="assets/ken-kaneki-gothic-5120x2880-18719.jpg" alt="Ken Kaneki" loading="lazy" class="w-full h-auto block">
+            <img src="assets/ken-kaneki-gothic-5120x2880-18719.jpg" alt="Ken Kaneki" loading="lazy"
+              class="w-full h-auto block">
+          </div>
+          <div class="mt-4">
+            <div class="flex items-center justify-between w-full text-gray-500 text-sm">
+
+              <!-- Reply -->
+              <div class="flex items-center gap-1">
+                <span class="material-symbols-outlined text-[19px]!">chat_bubble_outline</span>
+                <span>383</span>
+              </div>
+
+              <!-- Repost -->
+              <div class="flex items-center gap-1">
+                <span class="material-symbols-outlined text-[19px]!">repeat</span>
+                <span>2.5K</span>
+              </div>
+
+              <!-- Like -->
+              <div class="flex items-center gap-1">
+                <span class="material-symbols-outlined text-[19px]!">favorite_border</span>
+                <span>15K</span>
+              </div>
+
+              <!-- Views -->
+              <div class="flex items-center gap-1">
+                <span class="material-symbols-outlined text-[19px]!">bar_chart</span>
+                <span>3.7M</span>
+              </div>
+
+              <!-- Bookmark -->
+              <span class="material-symbols-outlined text-[19px]!">bookmark_border</span>
+
+              <!-- Share -->
+              <span class="material-symbols-outlined text-[19px]!">ios_share</span>
+
+            </div>
           </div>
         </div>
       </section>
@@ -336,27 +616,68 @@
       <!-- Post 8 -->
       <section class="p-3 hover:cursor-pointer flex gap-2 border-b border-slate-600">
         <span class="material-symbols-outlined text-5xl! shrink-0 hover:cursor-pointer">account_circle</span>
+
         <div class="w-full min-w-0">
           <div class="flex justify-between items-start gap-2 my-2">
             <div class="flex items-center gap-1 min-w-0 overflow-hidden">
               <div class="font-semibold text-lg hover:underline min-w-0 truncate">One Piece</div>
               <span class="material-symbols-outlined text-blue-600 shrink-0">verified</span>
+
               <div class="text-gray-400 font-light flex gap-1 whitespace-nowrap shrink-0">
                 <span>@onepiece_egghead ·</span>
                 <span class="hover:underline">2d</span>
               </div>
             </div>
+
             <div class="flex shrink-0">
               <span class="material-symbols-outlined text-gray-300 hover:cursor-pointer">assistant_device</span>
               <span class="material-symbols-outlined text-gray-300 hover:cursor-pointer">more_horiz</span>
             </div>
           </div>
+
           <div class="mb-2 wrap-break-word">
             The adventure continues into a world full of mysteries, impossible dreams, and battles that will shape the
             future. The crew keeps sailing forward, no matter what waits beyond the horizon.
           </div>
+
           <div class="w-full rounded-2xl overflow-hidden">
-            <img src="assets/one-piece-season-15-3840x2160-22064.jpg" alt="One Piece Egghead Cover" loading="lazy" class="w-full h-auto block">
+            <img src="assets/one-piece-season-15-3840x2160-22064.jpg" alt="One Piece Egghead Cover" loading="lazy"
+              class="w-full h-auto block">
+          </div>
+          <div class="mt-4">
+            <div class="flex items-center justify-between w-full text-gray-500 text-sm">
+
+              <!-- Reply -->
+              <div class="flex items-center gap-1">
+                <span class="material-symbols-outlined text-[19px]!">chat_bubble_outline</span>
+                <span>383</span>
+              </div>
+
+              <!-- Repost -->
+              <div class="flex items-center gap-1">
+                <span class="material-symbols-outlined text-[19px]!">repeat</span>
+                <span>2.5K</span>
+              </div>
+
+              <!-- Like -->
+              <div class="flex items-center gap-1">
+                <span class="material-symbols-outlined text-[19px]!">favorite_border</span>
+                <span>15K</span>
+              </div>
+
+              <!-- Views -->
+              <div class="flex items-center gap-1">
+                <span class="material-symbols-outlined text-[19px]!">bar_chart</span>
+                <span>3.7M</span>
+              </div>
+
+              <!-- Bookmark -->
+              <span class="material-symbols-outlined text-[19px]!">bookmark_border</span>
+
+              <!-- Share -->
+              <span class="material-symbols-outlined text-[19px]!">ios_share</span>
+
+            </div>
           </div>
         </div>
       </section>
@@ -364,27 +685,68 @@
       <!-- Post 9 -->
       <section class="p-3 hover:cursor-pointer flex gap-2 border-b border-slate-600">
         <span class="material-symbols-outlined text-5xl! shrink-0 hover:cursor-pointer">account_circle</span>
+
         <div class="w-full min-w-0">
           <div class="flex justify-between items-start gap-2 my-2">
             <div class="flex items-center gap-1 min-w-0 overflow-hidden">
               <div class="font-semibold text-lg hover:underline min-w-0 truncate">Team 7</div>
               <span class="material-symbols-outlined text-blue-600 shrink-0">verified</span>
+
               <div class="text-gray-400 font-light flex gap-1 whitespace-nowrap shrink-0">
                 <span>@team7_shinobi ·</span>
                 <span class="hover:underline">2d</span>
               </div>
             </div>
+
             <div class="flex shrink-0">
               <span class="material-symbols-outlined text-gray-300 hover:cursor-pointer">assistant_device</span>
               <span class="material-symbols-outlined text-gray-300 hover:cursor-pointer">more_horiz</span>
             </div>
           </div>
+
           <div class="mb-2 wrap-break-word">
             Different personalities, different dreams, and a journey none of them could have completed alone. No matter
             how far they went, the bonds they built as Team 7 remained unforgettable.
           </div>
+
           <div class="w-full rounded-2xl overflow-hidden">
-            <img src="assets/sakura-haruno-3840x2439-15459.jpg" alt="Naruto Team 7" loading="lazy" class="w-full h-auto block">
+            <img src="assets/sakura-haruno-3840x2439-15459.jpg" alt="Naruto Team 7" loading="lazy"
+              class="w-full h-auto block">
+          </div>
+          <div class="mt-4">
+            <div class="flex items-center justify-between w-full text-gray-500 text-sm">
+
+              <!-- Reply -->
+              <div class="flex items-center gap-1">
+                <span class="material-symbols-outlined text-[19px]!">chat_bubble_outline</span>
+                <span>383</span>
+              </div>
+
+              <!-- Repost -->
+              <div class="flex items-center gap-1">
+                <span class="material-symbols-outlined text-[19px]!">repeat</span>
+                <span>2.5K</span>
+              </div>
+
+              <!-- Like -->
+              <div class="flex items-center gap-1">
+                <span class="material-symbols-outlined text-[19px]!">favorite_border</span>
+                <span>15K</span>
+              </div>
+
+              <!-- Views -->
+              <div class="flex items-center gap-1">
+                <span class="material-symbols-outlined text-[19px]!">bar_chart</span>
+                <span>3.7M</span>
+              </div>
+
+              <!-- Bookmark -->
+              <span class="material-symbols-outlined text-[19px]!">bookmark_border</span>
+
+              <!-- Share -->
+              <span class="material-symbols-outlined text-[19px]!">ios_share</span>
+
+            </div>
           </div>
         </div>
       </section>
@@ -392,37 +754,80 @@
       <!-- Post 10 -->
       <section class="p-3 hover:cursor-pointer flex gap-2 border-b border-slate-600">
         <span class="material-symbols-outlined text-5xl! shrink-0 hover:cursor-pointer">account_circle</span>
+
         <div class="w-full min-w-0">
           <div class="flex justify-between items-start gap-2 my-2">
             <div class="flex items-center gap-1 min-w-0 overflow-hidden">
               <div class="font-semibold text-lg hover:underline min-w-0 truncate">Sasaki & Yamada</div>
               <span class="material-symbols-outlined text-blue-600 shrink-0">verified</span>
+
               <div class="text-gray-400 font-light flex gap-1 whitespace-nowrap shrink-0">
                 <span>@smoking_supermarket ·</span>
                 <span class="hover:underline">3d</span>
               </div>
             </div>
+
             <div class="flex shrink-0">
               <span class="material-symbols-outlined text-gray-300 hover:cursor-pointer">assistant_device</span>
               <span class="material-symbols-outlined text-gray-300 hover:cursor-pointer">more_horiz</span>
             </div>
           </div>
+
           <div class="mb-2 wrap-break-word">
             Sometimes the simplest conversations become the moments you remember the most. A quiet evening, a cigarette
             break, and two people slowly getting to know each other without rushing anything.
           </div>
+
           <div class="w-full rounded-2xl overflow-hidden">
-            <img src="assets/sasaki-yamada-5120x2880-26451.jpg" alt="Sasaki and Yamada" loading="lazy" class="w-full h-auto block">
+            <img src="assets/sasaki-yamada-5120x2880-26451.jpg" alt="Sasaki and Yamada" loading="lazy"
+              class="w-full h-auto block">
+          </div>
+          <div class="mt-4">
+            <div class="flex items-center justify-between w-full text-gray-500 text-sm">
+
+              <!-- Reply -->
+              <div class="flex items-center gap-1">
+                <span class="material-symbols-outlined text-[19px]!">chat_bubble_outline</span>
+                <span>383</span>
+              </div>
+
+              <!-- Repost -->
+              <div class="flex items-center gap-1">
+                <span class="material-symbols-outlined text-[19px]!">repeat</span>
+                <span>2.5K</span>
+              </div>
+
+              <!-- Like -->
+              <div class="flex items-center gap-1">
+                <span class="material-symbols-outlined text-[19px]!">favorite_border</span>
+                <span>15K</span>
+              </div>
+
+              <!-- Views -->
+              <div class="flex items-center gap-1">
+                <span class="material-symbols-outlined text-[19px]!">bar_chart</span>
+                <span>3.7M</span>
+              </div>
+
+              <!-- Bookmark -->
+              <span class="material-symbols-outlined text-[19px]!">bookmark_border</span>
+
+              <!-- Share -->
+              <span class="material-symbols-outlined text-[19px]!">ios_share</span>
+
+            </div>
           </div>
         </div>
       </section>
     </div>
 
     <!-- Third  -->
-    <div class="hidden xl:block xl:w-1/4 sticky top-0 h-screen self-start shrink-0 min-w-0 overflow-hidden">
+    <div class="hidden xl:block xl:w-1/4 shrink-0 min-w-0 sticky bottom-0 self-end">
+
       <!-- Search  -->
-      <div class="bg-black top-0 sticky z-50 pt-4">
-        <section class="flex gap-2 border relative border-slate-600 rounded-full w-[90%] mx-auto h-10 pl-4 items-center">
+      <div class="bg-black sticky top-0 z-50 pt-4 pb-2">
+        <section
+          class="flex gap-2 border relative border-slate-600 rounded-full w-[90%] mx-auto h-10 pl-4 items-center">
           <span class="material-symbols-outlined text-xl! text-gray-400">search</span>
           <input type="text" placeholder="Search" class="h-8 pl-1 bg-transparent outline-none w-full min-w-0">
         </section>
@@ -437,21 +842,25 @@
 
       <!-- Below Subscribe  -->
       <section class="flex flex-col gap-3 w-[90%] mx-auto my-4 border border-slate-600 rounded-2xl px-4 py-4">
+
         <div class="flex justify-between items-center">
           <div class="font-extrabold text-xl">Today's News</div>
           <span class="material-symbols-outlined hover:cursor-pointer">close</span>
         </div>
 
         <div class="space-y-10 py-6 hover:cursor-pointer w-full">
+
           <!-- 1st Aside -->
           <aside class="flex flex-col gap-2">
             <div class="font-medium">Glacier Collapse Triggers Deadly Flash Flood in Nepal Killing Nearly 900</div>
+
             <div class="flex items-center whitespace-nowrap">
               <div class="flex shrink-0">
                 <span class="material-symbols-outlined z-30 bg-black">account_circle</span>
                 <span class="material-symbols-outlined -ml-5 z-20 bg-black">account_circle</span>
                 <span class="material-symbols-outlined -ml-5 z-10 bg-black">account_circle</span>
               </div>
+
               <p class="text-sm text-slate-500 ml-3">2 days ago · News · 126.9K posts</p>
             </div>
           </aside>
@@ -459,12 +868,14 @@
           <!-- 2nd Aside -->
           <aside class="flex flex-col gap-2">
             <div class="font-bold">Atlético Madrid Land Jonathan David on Loan from Juventus</div>
+
             <div class="flex items-center whitespace-nowrap">
               <div class="flex shrink-0">
                 <span class="material-symbols-outlined z-30 bg-black">account_circle</span>
                 <span class="material-symbols-outlined -ml-5 z-20 bg-black">account_circle</span>
                 <span class="material-symbols-outlined -ml-5 z-10 bg-black">account_circle</span>
               </div>
+
               <p class="text-sm text-slate-500 ml-3">6 hours ago · Sports · 20.4K posts</p>
             </div>
           </aside>
@@ -472,30 +883,37 @@
           <!-- 3rd Aside -->
           <aside class="flex flex-col gap-2">
             <div class="font-bold">Xi and Putin Meet at SCO's 25th Anniversary Summit in Bishkek</div>
+
             <div class="flex items-center whitespace-nowrap">
               <div class="flex shrink-0">
                 <span class="material-symbols-outlined z-30 bg-black">account_circle</span>
                 <span class="material-symbols-outlined -ml-5 z-20 bg-black">account_circle</span>
                 <span class="material-symbols-outlined -ml-5 z-10 bg-black">account_circle</span>
               </div>
+
               <p class="text-sm text-slate-500 ml-3">4 hours ago · News · 4,334 posts</p>
             </div>
           </aside>
+
         </div>
       </section>
 
       <!-- What's Happening -->
       <section class="flex flex-col gap-3 w-[90%] mx-auto my-4 border border-slate-600 rounded-2xl px-6 py-4">
+
         <div class="font-extrabold text-xl">What's Happening</div>
 
         <div class="space-y-6 hover:cursor-pointer">
+
           <div class="flex justify-between items-center gap-2">
             <!-- 1st Aside -->
             <aside class="min-w-0">
               <p class="text-sm text-slate-500">Sports · Trending</p>
               <div class="font-semibold">The Greatest</div>
             </aside>
-            <span class="material-symbols-outlined hover:border hover:rounded-full hover:bg-blue-200 hover:text-blue-800 shrink-0">more_horiz</span>
+
+            <span
+              class="material-symbols-outlined hover:border hover:rounded-full hover:bg-blue-200 hover:text-blue-800 shrink-0">more_horiz</span>
           </div>
 
           <div class="flex justify-between items-center gap-2">
@@ -504,7 +922,9 @@
               <p class="text-sm text-slate-500">Politics · Trending</p>
               <div class="font-semibold">Son River</div>
             </aside>
-            <span class="material-symbols-outlined hover:border hover:rounded-full hover:bg-blue-200 hover:text-blue-800 shrink-0">more_horiz</span>
+
+            <span
+              class="material-symbols-outlined hover:border hover:rounded-full hover:bg-blue-200 hover:text-blue-800 shrink-0">more_horiz</span>
           </div>
 
           <div class="flex justify-between items-center gap-2">
@@ -513,7 +933,9 @@
               <p class="text-sm text-slate-500">Business &amp; Finance · Trending</p>
               <div class="font-semibold">#UPRise2026</div>
             </aside>
-            <span class="material-symbols-outlined hover:border hover:rounded-full hover:bg-blue-200 hover:text-blue-800 shrink-0">more_horiz</span>
+
+            <span
+              class="material-symbols-outlined hover:border hover:rounded-full hover:bg-blue-200 hover:text-blue-800 shrink-0">more_horiz</span>
           </div>
 
           <div class="flex justify-between items-center gap-2">
@@ -522,7 +944,9 @@
               <p class="text-sm text-slate-500">Trending in India</p>
               <div class="font-semibold">#Ronaldo</div>
             </aside>
-            <span class="material-symbols-outlined hover:border hover:rounded-full hover:bg-blue-200 hover:text-blue-800 shrink-0">more_horiz</span>
+
+            <span
+              class="material-symbols-outlined hover:border hover:rounded-full hover:bg-blue-200 hover:text-blue-800 shrink-0">more_horiz</span>
           </div>
 
           <div class="text-blue-400">Show more</div>
@@ -531,52 +955,69 @@
 
       <!-- Who to Follow  -->
       <section class="flex flex-col gap-3 w-[90%] mx-auto my-4 border border-slate-600 rounded-2xl px-6 py-4">
+
         <div class="font-extrabold text-xl">Who to Follow</div>
 
         <div class="space-y-6 mt-4 hover:cursor-pointer">
+
           <!-- 1st Aside -->
           <aside class="flex justify-between items-center gap-2">
             <div class="flex items-center gap-2 min-w-0">
+
               <span class="material-symbols-outlined text-4xl! shrink-0">account_circle</span>
+
               <div class="flex flex-col min-w-0">
                 <div class="flex gap-1 items-center min-w-0">
                   <div class="font-semibold text-base hover:underline min-w-0 truncate">Ravindrasinh Jadeja</div>
                   <span class="material-symbols-outlined text-blue-600 shrink-0">verified</span>
                 </div>
+
                 <p class="text-gray-500 text-sm truncate">@imjadeja</p>
               </div>
             </div>
-            <button class="border bg-white text-black rounded-full h-8 px-4 font-bold hover:bg-gray-300 hover:cursor-pointer shrink-0">Follow</button>
+
+            <button
+              class="border bg-white text-black rounded-full h-8 px-4 font-bold hover:bg-gray-300 hover:cursor-pointer shrink-0">Follow</button>
           </aside>
 
           <!-- 2nd Aside -->
           <aside class="flex justify-between items-center gap-2">
             <div class="flex items-center gap-2 min-w-0">
+
               <span class="material-symbols-outlined text-4xl! shrink-0">account_circle</span>
+
               <div class="flex flex-col min-w-0">
                 <div class="flex gap-1 items-center min-w-0">
                   <div class="font-semibold text-base hover:underline min-w-0 truncate">Sachin Tendulkar</div>
                   <span class="material-symbols-outlined text-blue-600 shrink-0">verified</span>
                 </div>
+
                 <p class="text-gray-500 text-sm truncate">@sachin_rt</p>
               </div>
             </div>
-            <button class="border bg-white text-black rounded-full h-8 px-4 font-bold hover:bg-gray-300 hover:cursor-pointer shrink-0">Follow</button>
+
+            <button
+              class="border bg-white text-black rounded-full h-8 px-4 font-bold hover:bg-gray-300 hover:cursor-pointer shrink-0">Follow</button>
           </aside>
 
           <!-- 3rd Aside -->
           <aside class="flex justify-between items-center gap-2">
             <div class="flex items-center gap-2 min-w-0">
+
               <span class="material-symbols-outlined text-4xl! shrink-0">account_circle</span>
+
               <div class="flex flex-col min-w-0">
                 <div class="flex gap-1 items-center min-w-0">
                   <div class="font-semibold text-base hover:underline min-w-0 truncate">Cristiano Ronaldo</div>
                   <span class="material-symbols-outlined text-blue-600 shrink-0">verified</span>
                 </div>
+
                 <p class="text-gray-500 text-sm truncate">@Cristiano</p>
               </div>
             </div>
-            <button class="border bg-white text-black rounded-full h-8 px-4 font-bold hover:bg-gray-300 hover:cursor-pointer shrink-0">Follow</button>
+
+            <button
+              class="border bg-white text-black rounded-full h-8 px-4 font-bold hover:bg-gray-300 hover:cursor-pointer shrink-0">Follow</button>
           </aside>
 
           <div class="text-blue-400">Show more</div>
@@ -586,17 +1027,24 @@
       <!-- Below Who to Follow  -->
       <section class="w-[90%] mx-auto my-4 pl-4">
         <div class="text-xs text-gray-500">
-          <span>Terms</span> · <span>Privacy</span> · <span>Cookies</span> · <span>Accessibility</span> ·
+          <span>Terms</span> ·
+          <span>Privacy</span> ·
+          <span>Cookies</span> ·
+          <span>Accessibility</span> ·
         </div>
+
         <div class="text-xs text-gray-500">
           <span>Ads Info</span> ·
+
           <span class="inline-flex items-center">
             <span>More</span>
             <span class="material-symbols-outlined text-xs font-extralight">more_horiz</span>
           </span> ·
+
           <span>&copy; 2026 X Corp.</span>
         </div>
       </section>
+
     </div>
   </div>
 </body>
